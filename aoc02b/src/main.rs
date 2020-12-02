@@ -4,8 +4,8 @@ use std::path::Path;
 use clap::{App, Arg};
 
 fn main() {
-    let matches = App::new("aoc01a")
-        .about("Advent of Code 2020 Day 1 Puzzle 1 solution")
+    let matches = App::new("aoc02b")
+        .about("Advent of Code 2020 Day 2 Puzzle B solution")
         .arg(Arg::with_name("INPUT")
             .required(true)
             .index(1))
@@ -14,7 +14,7 @@ fn main() {
     let input_file_path = matches.value_of("INPUT").unwrap();
 
     if let Some(input_lines) = read_input_lines(input_file_path) {
-        let count = input_lines.iter().filter(is_valid_password).count() as i32;
+        let count = input_lines.iter().filter(is_valid_password).count();
     
         println!("There are {} valid passwords!", count)
     }
@@ -25,7 +25,7 @@ where P: AsRef<Path>, {
     let input_file = File::open(path).ok()?; 
     BufReader::new(input_file).lines()
         .filter_map(Result::ok)
-        .map(|line| split_input_line(line))
+        .map(split_input_line)
         .collect()
 }
 

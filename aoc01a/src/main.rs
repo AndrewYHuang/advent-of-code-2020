@@ -7,7 +7,7 @@ const SUM_NUMBER: i32 = 2020;
 
 fn main() {
     let matches = App::new("aoc01a")
-        .about("Advent of Code 2020 Day 1 Puzzle 1 solution")
+        .about("Advent of Code 2020 Day 1 Puzzle A solution")
         .arg(Arg::with_name("INPUT")
             .required(true)
             .index(1))

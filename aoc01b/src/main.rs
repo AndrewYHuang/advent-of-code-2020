@@ -6,8 +6,8 @@ use clap::{App, Arg};
 const SUM_NUMBER: i32 = 2020;
 
 fn main() {
-    let matches = App::new("aoc01a")
-        .about("Advent of Code 2020 Day 1 Puzzle 1 solution")
+    let matches = App::new("aoc01b")
+        .about("Advent of Code 2020 Day 1 Puzzle B solution")
         .arg(Arg::with_name("INPUT")
             .required(true)
             .index(1))
