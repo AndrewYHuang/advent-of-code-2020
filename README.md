@@ -8,3 +8,6 @@ That was a nice, cute problem to solve! I'd like to generalise the solver so you
 
 ## Day 2
 Another cute problem! Spent most of the time working out how to use string operations, and Iterator methods.
+
+## Day 3
+Something about using 2D vectors instead of a jagged array but I'm too lazy.
